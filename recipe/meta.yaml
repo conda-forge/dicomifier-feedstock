@@ -12,7 +12,7 @@ source:
     - shared_libraries.patch
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<=35 or win]
 
 requirements:
