@@ -1,5 +1,5 @@
 {% set name = "dicomifier" %}
-{% set version = "1.4.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/lamyj/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 4cf6e6711d0507c6a5b557e2cdf2199fe024d3e31b343c01c053ac1e5a3aef50
+  sha256: 29a2ba2a0b2becc345c74d11bd7708ad39c1c96c50583befb407f05cd6eebdd9
   patches:
     - shared_libraries.patch
 
 build:
-  number: 1
-  skip: True  # [py<=35 or win]
+  number: 0
+  skip: true  # [py<=35 or win]
 
 requirements:
   build:
@@ -42,10 +42,10 @@ test:
 
 about:
   home: https://github.com/lamyj/dicomifier
-  license:  CECILL-B
+  license: CECILL-B
   license_family: OTHER
   license_file: LICENSE.txt
-  summary: 'Convert data from Bruker to DICOM and from DICOM to NIfTI'
+  summary: Convert data from Bruker to DICOM and from DICOM to NIfTI
 
   description: |
     Dicomifier is a set of tools to convert Bruker data to DICOM files, and 
