@@ -21,14 +21,14 @@ requirements:
     - ninja
   host:
     - boost-cpp
-    - odil>=0.12
+    - odil >=0.12
     - pybind11
     - python
   run:
     - boost-cpp
     - nibabel
     - numpy
-    - odil>=0.12
+    - odil >=0.12
     - python
     - python-dateutil
 
