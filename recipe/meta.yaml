@@ -8,8 +8,7 @@ package:
 source:
   url: https://github.com/lamyj/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: 29a2ba2a0b2becc345c74d11bd7708ad39c1c96c50583befb407f05cd6eebdd9
-  patches:
-    - shared_libraries.patch
+  patches: []
 
 build:
   number: 0
