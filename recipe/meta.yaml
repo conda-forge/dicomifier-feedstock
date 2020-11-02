@@ -1,5 +1,5 @@
 {% set name = "dicomifier" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/lamyj/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: f2a89398b8bb8bb4df0dce7844d0b45be383ab0bb839dd835801e943b3d616dc
+  sha256: f9e8773bd163e53989178328b8bf4ac266708d5fcb0600ebd37bc4c2a050fab4
   patches: []
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<=35 or win]
 
 requirements:
