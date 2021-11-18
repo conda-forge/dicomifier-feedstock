@@ -8,10 +8,11 @@ package:
 source:
   url: https://github.com/lamyj/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: 21adf8577f3a4475cf977e2132ef06edb15bfb263929a28e4f3dfd4411d45372
-  patches: []
+  patches:
+    - meta_data.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<=35 or win]
 
 requirements:
