@@ -1,5 +1,5 @@
 {% set name = "dicomifier" %}
-{% set version = "2.3.1" %}
+{% set version = "2.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/lamyj/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 59f687b3fda5253e774d51eb8f89aaf868ef651cf39facea0a0ccb4eea62ac66
+  sha256: 9ae81a98a81446307324121c1900d4e647bc005b57600361c7899e8d07280a47
   patches: []
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<=35 or win]
 
 requirements:
@@ -36,8 +36,8 @@ test:
   imports:
     - dicomifier
   commands:
-    - bruker2dicom --help > /dev/null
-    - dicom2nifti --help > /dev/null
+    - dicomifier to-dicom --help > /dev/null
+    - dicomifier to-nifti --help > /dev/null
 
 about:
   home: https://github.com/lamyj/dicomifier
