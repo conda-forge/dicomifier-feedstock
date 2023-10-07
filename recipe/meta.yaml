@@ -20,7 +20,7 @@ requirements:
     - cmake
     - ninja
   host:
-    - libboost-devel
+    - libboost-headers
     - odil >=0.12
     - pybind11
     - python
