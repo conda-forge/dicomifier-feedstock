@@ -11,7 +11,7 @@ source:
   patches: []
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<=35 or win]
 
 requirements:
@@ -20,12 +20,11 @@ requirements:
     - cmake
     - ninja
   host:
-    - boost-cpp
+    - libboost-headers
     - odil >=0.12
     - pybind11
     - python
   run:
-    - boost-cpp
     - nibabel
     - numpy
     - odil >=0.12
