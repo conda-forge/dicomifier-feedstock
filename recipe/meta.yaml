@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [py<=35 or win]
+  skip: true  # [win]
 
 requirements:
   build:
@@ -21,13 +21,14 @@ requirements:
     - ninja
   host:
     - libboost-headers
-    - odil >=0.12
+    - numpy
+    - odil >=0.13
     - pybind11
     - python
   run:
     - nibabel
     - numpy
-    - odil >=0.12
+    - odil >=0.13
     - python
     - python-dateutil
 
