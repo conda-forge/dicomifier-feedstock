@@ -10,7 +10,7 @@ cmake \
   -GNinja \
   -DCMAKE_BUILD_TYPE=Release \
   -DBUILD_TESTING=OFF -DBUILD_EXAMPLES=OFF \
-  -DCMAKE_INSTALL_PREFIX=${PREFIX} -DPYTHON_EXECUTABLE=${PYTHON} \
+  -DCMAKE_INSTALL_PREFIX=${PREFIX} -DPython_EXECUTABLE=${PYTHON} \
   ../
 
 cmake --build . --target install
