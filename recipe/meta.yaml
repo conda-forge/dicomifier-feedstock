@@ -12,7 +12,8 @@ source:
 
 build:
   number: 0
-  skip: true  # [win]
+  # FIXME: should compile on OSX
+  skip: true  # [win or osx]
 
 requirements:
   build:
