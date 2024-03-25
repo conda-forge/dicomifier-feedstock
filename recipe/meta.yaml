@@ -1,5 +1,5 @@
 {% set name = "dicomifier" %}
-{% set version = "2.4.0" %}
+{% set version = "2.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,13 @@ package:
 
 source:
   url: https://github.com/lamyj/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 9ae81a98a81446307324121c1900d4e647bc005b57600361c7899e8d07280a47
+  sha256: b7f5a9638081fbcfb6492fe527ea9043d7d490988b1490c4504ef695acae2d94
   patches: []
 
 build:
-  number: 1
-  skip: true  # [py<=35 or win]
+  number: 0
+  # FIXME: should compile on OSX
+  skip: true  # [win or osx]
 
 requirements:
   build:
@@ -21,13 +22,14 @@ requirements:
     - ninja
   host:
     - libboost-headers
-    - odil >=0.12
+    - numpy
+    - odil >=0.13
     - pybind11
     - python
   run:
     - nibabel
-    - numpy
-    - odil >=0.12
+    - {{ pin_compatible('numpy') }}
+    - odil >=0.13
     - python
     - python-dateutil
 
