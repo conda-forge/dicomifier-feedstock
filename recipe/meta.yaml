@@ -8,7 +8,8 @@ package:
 source:
   url: https://github.com/lamyj/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: 7382300625f1f3fc9469d8f257940aebd9f7ee84c35f31b36ebc178a5260fc0b
-  patches: []
+  patches:
+    - fix-module-type.patch
 
 build:
   number: 1
