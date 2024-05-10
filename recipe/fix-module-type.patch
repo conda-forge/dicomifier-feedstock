@@ -1,0 +1,13 @@
+diff --git a/src/python/dicomifier/CMakeLists.txt b/src/python/dicomifier/CMakeLists.txt
+index b36bb35..fa2684d 100644
+--- a/src/python/dicomifier/CMakeLists.txt
++++ b/src/python/dicomifier/CMakeLists.txt
+@@ -22,7 +22,7 @@ list(SORT template_files)
+ add_definitions(-DBOOST_ALL_DYN_LINK)
+ 
+ pybind11_add_module(
+-    pydicomifier_dicomifier SHARED
++    pydicomifier_dicomifier 
+     ${header_files} ${source_files} ${template_files})
+ 
+ set_target_properties(pydicomifier_dicomifier PROPERTIES OUTPUT_NAME _dicomifier)
