@@ -1,0 +1,9 @@
+diff --git a/src/python/dicomifier/CMakeLists.txt b/src/python/dicomifier/CMakeLists.txt
+index b36bb35..d5984eb 100644
+--- a/src/python/dicomifier/CMakeLists.txt
++++ b/src/python/dicomifier/CMakeLists.txt
+@@ -1,3 +1,4 @@
++find_package(ZLIB REQUIRED)
+ find_package(Odil)
+ if(NOT "${Odil_FOUND}")
+     find_file(Odil_INCLUDE odil/odil.h REQUIRED)
