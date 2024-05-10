@@ -10,6 +10,7 @@ source:
   sha256: 7382300625f1f3fc9469d8f257940aebd9f7ee84c35f31b36ebc178a5260fc0b
   patches:
     - fix-module-type.patch
+    - fix-cmake-requirements.patch
 
 build:
   number: 1
@@ -27,6 +28,7 @@ requirements:
     - odil >=0.13
     - pybind11
     - python
+    - zlib
   run:
     - nibabel
     - {{ pin_compatible('numpy') }}
