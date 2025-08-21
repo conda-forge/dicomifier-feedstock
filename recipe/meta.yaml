@@ -29,6 +29,7 @@ requirements:
     - python
   run:
     - nibabel
+    - numpy < 2
     - odil >=0.13
     - python
     - python-dateutil
