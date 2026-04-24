@@ -11,7 +11,7 @@ source:
   patches: []
 
 build:
-  number: 2
+  number: 3
   # FIXME: should compile on OSX
   skip: true  # [win or osx]
 
